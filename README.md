@@ -13,7 +13,7 @@ I removed all data points with race = "Chinese" because I realized that they wer
 ###  18 < age < 65:
 Since I am looking at a correlation between smartphones and income I decided to filter out anyone over retirement age (65) as income becomes different when you reach retirement. I also removed anyone below 18 as I wanted to focus on those who were most likely working and funding the purchase of their own smartphone. 
 
-### income < $1000000
+### income < $500000
 I did this to remove outliers in the household_income portion of the data.
 
 ## What is in this repo?
@@ -42,6 +42,8 @@ In the end I came to the conclusion that in the year 2023 there is almost no cor
 
 ### yearcomp.ipynb
 
-In this file I explore my theory that as smartphones become more and more essential to life the ownership of them becomes less and less correlated with income. In this file I take each dataset and then find the correlation for each one and then graph it to show the trend that I extracted from the data. I then added a trend line to show the overall trend from 2021 - 2023.
+In this file I explore my theory that as smartphones become more and more essential to life the ownership of them becomes less and less correlated with income. In this file I take each dataset and then find the correlation for each one and then graph it to show the trend that I extracted from the data.
 
 I then used Fisher's r-to-z test to see if this difference is statistically significant and it is with a p-value of 0.00005 which is much less than 0.05.
+
+I also looked at the correlation between income and age which ahd similar behavior from 2021 to 2023.
